@@ -29,6 +29,13 @@ git submodule add https://github.com/wanghao00/js4sloth.git utils
 	path = utils
 	url = https://github.com/wanghao00/js4sloth.git
 ```
+一个来自于py-faster-rcnn的例子,包含了分支信息
+```
+[submodule "caffe-fast-rcnn"]
+	path = caffe-fast-rcnn
+	url = https://github.com/rbgirshick/caffe-fast-rcnn.git
+	branch = fast-rcnn
+```
 
 #### submodule的branch切换, 和 删除
 
