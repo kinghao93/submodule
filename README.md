@@ -67,7 +67,7 @@ git clone -b 分支名 url
 
 删除操作分为几个步骤：
 1. 删除在`.gitmodules`文件中的相应配置信息。
-2. 执行`git rm -cached` 将子模块所在的文件删除 
+2. 执行`git rm --cached` 将子模块所在的文件删除 
 ``` 
 """
 目标： 删除js4sloth submodule
