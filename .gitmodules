@@ -1,3 +1,6 @@
 [submodule "utils"]
 	path = utils
 	url = https://github.com/wanghao00/js4sloth.git
+[submodule "my-caffe"]
+	path = my-caffe
+	url = https://github.com/wanghao00/caffe.git

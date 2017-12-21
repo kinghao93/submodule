@@ -15,6 +15,7 @@ git submodule update --init --recursive
 git clone --recursive url
 ```
 
+#### 创建/添加 submodule 
 我在尝试 包含 自己的 js4sloth 项目
 ```
 # 命令格式
@@ -29,3 +30,27 @@ git submodule add https://github.com/wanghao00/js4sloth.git utils
 	url = https://github.com/wanghao00/js4sloth.git
 ```
 
+#### submodule的branch切换, 和 删除
+
+分支切换
+
+```
+# 创建
+git submodule add https://github.com/wanghao00/caffe.git my-caffe
+```
+此时,包含了2个 submodule, `.gitmodule`文件内容如下：
+```
+[submodule "utils"]
+	path = utils
+	url = https://github.com/wanghao00/js4sloth.git
+[submodule "my-caffe"]
+	path = my-caffe
+	url = https://github.com/wanghao00/caffe.git
+```
+项目的目录结构如图：
+![](./module_add.png)
+
+
+
+参考：
+* [git submodule的使用](http://blog.csdn.net/wangjia55/article/details/24400501)
