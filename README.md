@@ -49,6 +49,7 @@ git submodule add https://github.com/wanghao00/caffe.git my-caffe
 ```
 项目的目录结构如图：
 ![](./module_add.png)
+![](./module_add2.png)
 
 
 
