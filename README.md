@@ -67,7 +67,18 @@ git clone -b 分支名 url
 
 删除操作分为几个步骤：
 1. 删除在`.gitmodules`文件中的相应配置信息。
-2. 执行`git rm -cached` 将子模块所在的文件删除
+2. 执行`git rm --cached` 将子模块所在的文件删除 
+``` 
+"""
+目标： 删除js4sloth submodule
+1. .gitmodules
+[submodule "utils"]
+	path = utils
+	url = https://github.com/wanghao00/js4sloth.git
+2. 
+"""
+
+```
 
 
 参考：
@@ -75,3 +86,4 @@ git clone -b 分支名 url
 * [请问如何更新git项目中的submodule](https://segmentfault.com/q/1010000002538609)
 * [Github的项目怎么引用另一个项目？](https://segmentfault.com/q/1010000000670427)
 * [github中, fork了别人项目后, 如何将别人新增的分支同步过来](https://segmentfault.com/q/1010000004228020/)
+* [git reset revert 回退 回滚取消提交返回上一版本](http://yijiebuyi.com/blog/8f985d539566d0bf3b804df6be4e0c90.html)
